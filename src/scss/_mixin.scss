@@ -1,0 +1,23 @@
+@use './color' as *;
+@mixin heading-block() {
+  font-size: calc(7rem + 1.23vw);
+  line-height: 7rem;
+  font-weight: 900;
+  margin-bottom: 4rem;
+  color: $text-color;
+}
+// @mixin heading-block() {
+//   font-size: 7rem;
+//   line-height: 7rem;
+//   font-weight: 900;
+//   margin-bottom: 4rem;
+//   color: $text-color;
+// }
+
+@mixin title-block() {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  margin-bottom: 11rem;
+  color: $text-color;
+  max-width: 50rem;
+}

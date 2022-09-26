@@ -1,0 +1,49 @@
+@use './color' as *;
+
+.products {
+  margin-bottom: 25rem;
+
+  &__header {
+    font-size: 6rem;
+    font-weight: 400;
+    color: $text-color;
+    text-align: center;
+    position: relative;
+    display: block;
+    margin-bottom: 5.2rem;
+
+    @media (max-width: 414px) {
+      font-size: 4rem;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      background-color: $text-color;
+      width: 12.6rem;
+      height: 0.5rem;
+      bottom: -1.8rem;
+      right: 45%;
+      border-radius: 20px;
+    }
+
+    @media (max-width: 768px) {
+      margin-top: 10rem;
+    }
+  }
+
+  &__inner {
+    display: grid;
+    // grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+    gap: 12rem 1.5rem;
+
+    @media (max-width: 670px) {
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+
+    @media (max-width: 414px) {
+      gap: 8rem 1.5rem;
+    }
+  }
+}

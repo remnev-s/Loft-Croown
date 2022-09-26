@@ -1,0 +1,58 @@
+@use './color' as *;
+@use './mixin' as *;
+.team {
+  background-color: $bg-block-team-footer;
+  padding: 5rem 0;
+  &__heading {
+    @include heading-block();
+  }
+  &__title {
+    @include title-block();
+  }
+  &__coach {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8rem;
+
+    @media (max-width: 768px) {
+      grid-gap: 2.8rem;
+      width: 100%;
+    }
+
+    &-wrapper {
+      max-width: 122rem;
+      margin: 0 auto;
+      overflow-x: auto;
+      padding: 0 0 3rem 5rem;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    &-img {
+      margin-bottom: 3rem;
+      object-fit: contain;
+    }
+    &-name {
+      color: $text-color;
+      font-size: 2.2rem;
+      line-height: 2.9rem;
+      letter-spacing: 0.5rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    &-about {
+      color: $text-color;
+      font-size: 2rem;
+      line-height: 2.6rem;
+      font-weight: 400;
+    }
+  }
+}
+
+.team-inner {
+  padding-top: 8rem;
+  padding-bottom: 6rem;
+}

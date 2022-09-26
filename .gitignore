@@ -1,0 +1,17 @@
+.DS_Store
+Thumbs.db
+
+*.ai
+*.psd
+*.pdf
+*.log
+
+.nova/
+CNAME
+
+build/
+node_modules/
+
+
+
+

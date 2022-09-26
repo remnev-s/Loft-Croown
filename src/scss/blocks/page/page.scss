@@ -1,0 +1,9 @@
+@use './color' as *;
+@use './mixin' as *;
+
+.page {
+  background-color: $bg-main-page;
+  &__header {
+    // overflow: hidden;
+  }
+}

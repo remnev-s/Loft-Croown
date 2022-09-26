@@ -1,0 +1,70 @@
+@use './color' as *;
+
+.header-navigation {
+  // background-color: lightcoral;
+  // opacity: 0.5;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  z-index: 10;
+
+  @media (max-width: 960px) {
+    align-items: start;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+
+    @media (max-width: 960px) {
+      flex-direction: column;
+    }
+    @media (max-width: 670px) {
+      display: none;
+    }
+
+    &-item {
+      list-style: none;
+      @media (max-width: 960px) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    &-link {
+      color: $text-color;
+      font-size: 1.6rem;
+      // text-decoration: none; Убираем подчеркивание
+      // border-bottom: 1.5px dashed #ffffff; /* Добавляем свою линию */
+      text-decoration-style: dashed;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 5px;
+      &:not(last-child) {
+        margin-right: 3rem;
+      }
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+
+    &-phone {
+      color: $text-color;
+      font-size: 2.6rem;
+      text-decoration: none;
+      @media (max-width: 414px) {
+        font-size: 2rem;
+      }
+    }
+
+    &-mail {
+      color: $text-color;
+      font-size: 1.4rem;
+      font-weight: 400;
+      text-decoration: none;
+      align-self: flex-end;
+    }
+  }
+}

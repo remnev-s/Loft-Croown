@@ -1,0 +1,45 @@
+@use './color' as *;
+@use './mixin' as *;
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem 11.3rem 3rem;
+
+  @media (max-width: 414px) {
+    flex-direction: column;
+  }
+
+  &__description {
+    font-size: 2rem;
+    color: $text-color;
+    margin-bottom: 2rem;
+  }
+
+  &__date {
+    font-size: 1.5rem;
+    line-height: 2rem;
+
+    @media (max-width: 414px) {
+      order: 1;
+      margin: 2rem 0;
+    }
+    color: #8e9199;
+  }
+
+  &__autor {
+    text-decoration: none;
+    font-size: 1.5rem;
+    line-height: 2rem;
+
+    @media (max-width: 414px) {
+      order: 1;
+    }
+    color: #8e9199;
+
+    & span {
+      color: orange;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@use './color' as *;
+
+.card {
+  padding: 1rem 5rem;
+  max-width: 41rem;
+
+  @media (max-width: 768px) {
+    padding: 1rem 2rem;
+  }
+
+  &__header {
+    font-size: 2.6rem;
+    line-height: 3.3rem;
+    font-weight: 700;
+    color: $text-color;
+    margin-bottom: 0.5rem;
+  }
+
+  &__price {
+    font-size: 2.1rem;
+    line-height: 3.3rem;
+    font-weight: 400;
+    color: #fca940;
+    margin-bottom: 1.2rem;
+  }
+
+  &__description {
+    color: $text-color;
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+  }
+
+  &__buy-btn {
+    padding: 1.5rem 5.5rem;
+    border: solid 1px transparent;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  & img {
+    width: 100%;
+  }
+}

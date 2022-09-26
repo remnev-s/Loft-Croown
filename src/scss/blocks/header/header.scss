@@ -1,0 +1,21 @@
+@use './color' as *;
+.header {
+  @media (max-width: 414px) {
+    min-height: 65rem;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+
+    @media (max-width: 960px) {
+      align-items: start;
+    }
+  }
+
+  &-logo {
+    @media (max-width: 414px) {
+      width: 40%;
+    }
+  }
+}
