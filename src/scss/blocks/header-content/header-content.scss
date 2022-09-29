@@ -5,7 +5,8 @@
   // width: 100%;
   margin-top: 12.6rem;
 
-  display: flex;
+  // display: flex;
+  display: block;
 
   @media (max-width: 768px) {
     display: flex;
@@ -45,7 +46,7 @@
     color: $text-color;
     max-width: 40rem;
     font-weight: 200;
-    margin-bottom: 14.2rem;
+    margin-bottom: 19.2rem;
 
     @media (max-width: 768px) {
       margin-bottom: 7rem;
@@ -56,8 +57,7 @@
     right: -6rem;
     top: -24rem;
 
-    max-width: 100%;
-    // z-index: 1;
+    max-width: 70%;
 
     @media (max-width: 960px) {
       right: 0;
@@ -88,19 +88,42 @@
 }
 
 .quality {
-  color: $text-color;
-  display: flex;
-  padding: 0;
+  position: inherit;
+  display: grid;
+  grid-template-columns: 65% 1fr;
 
-  li {
-    list-style: none;
-    font-size: 1.6rem;
-    max-width: 10rem;
-    margin-right: 3.5rem;
+  &__list {
+    color: $text-color;
+    // display: flex;
+    padding: 0;
 
-    @media (max-width: 414px) {
-      margin-right: 2rem;
-      font-size: 1.4rem;
+    li {
+      list-style: none;
+      font-size: 1.6rem;
+      max-width: 10rem;
+      margin-bottom: 3.5rem;
+
+      @media (max-width: 414px) {
+        margin-right: 2rem;
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  &__text {
+    position: relative;
+    font-size: 3.6rem;
+    color: $text-color;
+    max-width: 100px;
+    text-align: center;
+    z-index: 2;
+
+    &::before {
+      position: absolute;
+      content: url(../../img/sun.png);
+      top: -3.4rem;
+      left: -4.3rem;
+      z-index: -1;
     }
   }
 }

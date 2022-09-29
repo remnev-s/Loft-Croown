@@ -65,28 +65,26 @@ label {
   }
 }
 
+input[type='text'] {
+  color: #fff;
+}
+input[type='tel'] {
+  color: #fff;
+}
+
+textarea {
+  color: #fff;
+}
 input {
-  min-width: 34.2rem;
+  min-width: 40rem;
   height: 5rem;
   font-size: 1.6rem;
-  padding-left: 1rem;
+  padding-left: 1.5rem;
+  background-color: #1e1e1e;
+  border: none;
 
   @media (max-width: 414px) {
     min-width: 28rem;
-  }
-}
-
-input[type='text'] {
-  margin: 0 0 0 15.5rem;
-  @media (max-width: 995px) {
-    margin: 0;
-  }
-}
-
-input[type='tel'] {
-  margin: 0 0 0 11.8rem;
-  @media (max-width: 995px) {
-    margin: 0;
   }
 }
 
@@ -105,12 +103,15 @@ fieldset {
   }
 
   &__field {
-    margin-left: 8rem;
     min-height: 17.2rem;
-    width: 51.2rem;
-    padding: 1.8rem 1rem 0 2.3rem;
-    font-size: 2.1rem;
-    color: #b4b4b4;
+    width: 40rem;
+    font-size: 1.6rem;
+    padding: 1rem 1rem 0 1.5rem;
+    // font-size: 2.1rem;
+    // color: #b4b4b4;
+    background-color: #1e1e1e;
+    color: #8d8d8d;
+    border: none;
 
     @media (max-width: 995px) {
       width: 34.2rem;
@@ -151,7 +152,7 @@ fieldset {
   background-origin: border-box;
   background-clip: content-box, border-box;
   box-shadow: 2px 1000px 1px #0d0d0d inset;
-  margin: 3rem 0 1rem 19rem;
+  margin: 3rem 0 1rem 0;
 
   @media (max-width: 995px) {
     margin: 3rem 0 1rem 0;

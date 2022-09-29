@@ -1,0 +1,54 @@
+@use './color' as *;
+
+.iso {
+  background-color: #d3002e;
+  max-height: 159px;
+  margin-bottom: 20rem;
+  display: flex;
+
+  &__inner {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    & img {
+      margin-right: 5rem;
+    }
+  }
+
+  &__text {
+    font-size: 2.2rem;
+    line-height: 3rem;
+    font-weight: 400;
+    color: $text-color;
+    max-width: 535px;
+    margin-top: 55px;
+
+    & a {
+      text-decoration: none;
+      color: #f4ae2b;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 10px;
+  }
+
+  &__list {
+    display: flex;
+    padding: 0;
+
+    & li {
+      margin-right: 1rem;
+      padding-right: 20px;
+
+      &:first-child {
+        list-style-type: none;
+      }
+    }
+
+    a {
+      font-size: 1.4rem;
+    }
+  }
+}

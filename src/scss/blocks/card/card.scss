@@ -25,13 +25,10 @@
   }
 
   &__description {
+    font-size: 2.6rem;
+    line-height: 3.3rem;
+    font-weight: 700;
     color: $text-color;
-    list-style-type: none;
-    padding: 0;
-    font-size: 1.8rem;
-    line-height: 2.5rem;
-    font-weight: 400;
-    margin-bottom: 3rem;
   }
 
   &__buy-btn {
@@ -43,5 +40,68 @@
 
   & img {
     width: 100%;
+  }
+}
+
+.order {
+  // outline: 1px solid red;
+  display: grid;
+  grid-template-columns: max-content 26% 30%;
+  gap: 10rem;
+  padding: 0 40px;
+  margin: 8rem 0;
+
+  &__text {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    font-weight: 400;
+    color: $text-color;
+    margin-top: 2rem;
+
+    &-list {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      & li {
+        list-style: none;
+      }
+    }
+  }
+}
+
+.specification {
+  padding: 0 40px;
+  &__heading {
+    color: $text-color;
+    font-size: 2.8rem;
+  }
+
+  &__category {
+    display: grid;
+    grid-template-columns: 40% 40% 1fr;
+
+    &-list {
+      margin-top: 2rem;
+      padding: 0;
+
+      & li {
+        font-size: 1.8rem;
+        color: $text-color;
+        opacity: 0.6;
+        list-style: none;
+        margin-bottom: 0.5rem;
+
+        // outline: 1px solid red;
+        display: grid;
+        grid-template-columns: 250px 1fr;
+
+        & span {
+          font-size: 1.5rem;
+          font-weight: 200;
+        }
+      }
+    }
   }
 }
